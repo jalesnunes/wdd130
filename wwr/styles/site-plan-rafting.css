@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+:root {
+    --primary-color: #869D7A;  
+    --secondary-color: #5BC0EB;  
+    --accent1-color: #FEE9E1;  
+    --accent2-color: #6B4B3E;  
+
+    --heading-font: Poppins;  
+    --paragraph-font: Roboto;
+
+    --nav-bg-color: #333;  
+    --nav-link-color: #fff;  
+    --nav-hover-link-color: #3498db;  
+    --nav-hover-bg-color: #555;  
+}
+
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);  
+}
+
+header {
+    background-color: var(--accent1-color);
+    padding: 20px;
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-bg-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-bg-color);
+}
