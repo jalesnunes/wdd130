@@ -10,10 +10,10 @@
     --heading-font: Poppins;  
     --paragraph-font: Roboto;
 
-    --nav-bg-color: #333;  
+    --nav-background-color: #333;  
     --nav-link-color: #fff;  
     --nav-hover-link-color: #3498db;  
-    --nav-hover-bg-color: #555;  
+    --nav-hover-background-color: #555;  
 }
 
 
@@ -38,7 +38,7 @@ p {
 }
 
 nav {
-    background-color: var(--nav-bg-color);
+    background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
 }
@@ -56,5 +56,5 @@ nav a:link, nav a:visited {
 
 nav a:hover {
     color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-bg-color);
+    background-color: var(--nav-hover-background-color);
 }
