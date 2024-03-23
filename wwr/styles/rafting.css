@@ -1,77 +1,177 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 
 :root {
-    --primary-color: #869D7A;  
-    --secondary-color: #5BC0EB;  
-    --accent1-color: #FEE9E1;  
-    --accent2-color: #6B4B3E;  
+  --primary-color: #869d7a;
+  --secondary-color: #5bc0eb;
+  --accent1-color: #fee9e1;
+  --accent2-color: #6b4b3e;
 
-    --heading-font: Poppins;  
-    --paragraph-font: Roboto;
+  --heading-font: Poppins;
+  --paragraph-font: Roboto;
 
-    --nav-background-color: #333;  
-    --nav-link-color: #fff;  
-    --nav-hover-link-color: #3498db;  
-    --nav-hover-background-color: #555;  
+  --nav-background-color: #333;
+  --nav-link-color: #fff;
+  --nav-hover-link-color: #3498db;
+  --nav-hover-background-color: #555;
 }
 
-h1, h2, h3 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
 }
 
 p {
-    font-family: var(--paragraph-font);
-    color: var(--accent2-color);
+  font-family: var(--paragraph-font);
+  color: var(--accent2-color);
+}
+
+header {
+  background-color: var(--nav-background-color);
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 520px 2fr 0.5fr;
+  align-items: center;
+}
+
+.logo {
+  margin: 0 0.25rem 0 1rem;
+  width: 100px;
+  height: auto;
+}
+
+header nav {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 2rem;
+}
+
+header nav a:link,
+header nav a:visited {
+  color: var(--nav-link-color);
+}
+
+header nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+.wrapper {
+  width: 1500px;
+  margin: 0 auto;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 80px;
+  color: var(--primary-color);
+  font-size: 4rem;
+  text-align: center;
+}
+
+.hero article {
+  width: 80%;
+  position: absolute;
+  bottom: 80px;
+  left: 130px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.hero article img {
+  max-width: 200px;
+  float: right;
+  margin-right: 20px;
+}
+
+.hero article p {
+  color: var(--accent1-color);
+}
+
+.history-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.history-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.history-section p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.adventures-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.adventure-images {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.adventure-images figure {
+  margin: 0;
+}
+
+.adventure-images img {
+  width: 100%;
+  height: 200px;
+}
+
+.adventure-images figcaption {
+  margin-top: 5px;
+}
+
+footer {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
 }
 
 footer a {
     text-decoration: none;
 }
 
-.wrapper {
-    width: 1500px;
-    margin: 0 auto;
+.social-icons {
+    display: flex;
 }
 
-.hero {
-    position: relative;
+.social-icons a {
+    margin-left: 10px; 
 }
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero h1 {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 80px;
-    color: var(--primary-color);
-    font-size: 4rem;
-    text-align: center;
-}
-
-.hero article {
-    width: 80%;
-    position: absolute;
-    bottom: 80px;
-    left: 130px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-}
-
-.hero article img {
-    max-width: 200px;
-    float: right;
-    margin-right: 20px;
-}
-
-.hero article p {
-    color: var(--accent1-color)
-}
-
-
